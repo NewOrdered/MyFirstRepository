@@ -40,9 +40,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ZedGraph">
-      <HintPath>\\ru\svetlypublic\Документы пользователей\a.narbut\Desktop\C# всякое\ZedGraph.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HistorianServer.cs" />
