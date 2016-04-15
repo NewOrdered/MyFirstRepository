@@ -57,7 +57,6 @@ namespace HistorianTrendViewer
             listBoxServers.DataSource = bsServers;
             listBoxServers.DisplayMember = "Name";
             listBoxServers.ValueMember = "Id";
-            //listBoxServers.SelectedIndex = -1;
         }
 
         public void LoadServerDetails(HistorianServer _server)
@@ -72,7 +71,7 @@ namespace HistorianTrendViewer
 
         #endregion
 
-        private BindingSource bsServers = new BindingSource();
+        private BindingSource bsServers;
 
         public FrmServers()
         {
@@ -80,6 +79,8 @@ namespace HistorianTrendViewer
 
             this.Shown += new EventHandler(FrmServers_Shown);
             this.FormClosing += new FormClosingEventHandler(FrmServers_FormClosing);
+
+            bsServers = new BindingSource();
         }
 
         private void FrmServers_FormClosing(object sender, FormClosingEventArgs e)
